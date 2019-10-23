@@ -20,24 +20,14 @@
 <body>
 
 
-<!--<script src="./lib/jquery.min.js"></script>-->
 <script src="./lib/marked.min.js"></script>
-<script>
-	$.get('./index.md', function(response, status, xhr){
-		$("#content").html(marked(response));
-	});
-</script>
-
-<script>
-	
-</script>
 
 <div class="top">
 				
 	<div class="header">
 
 		<div class="left">
-			cloudinnng.gitee.io
+			cloudinnng.github.io
 		</div>
 		
 		<div class="right">
@@ -53,34 +43,33 @@
 
 <div class="container">	
 
-	<div class="navigation">
-		<a href="index.html">首页</a>
-		<a href="index-introduction.html">个人介绍</a>
-						
-		<div class="clearer"><span></span></div>
+	<div class="navigation" id="navigation">
+		<script>
+			<!--载入导航栏模板-->
+			$("#navigation").load("navigation.html");
+		</script>
 	</div>
 
 	<div class="main">		
 		
 		<div class="content" id="content">
 <!---------------------------------------------------------------------------------------->
-<div id="page1"></div>
-<div id="page2"></div>
+<!--主内容区域-->
+<!--
 <script>
-	  $("#page1").load("importtest.html");
-	  
+	$.get('./index.md', function(response, status, xhr){
+		$("#content").html(marked(response));
+	});
 </script>
-
+-->
 <!---------------------------------------------------------------------------------------->
 		</div>
 
-		<div class="sidenav">
-
-			<h2>便捷网盘</h2>
-			<ul>
-				<li><a href="./files/wb.rar">网吧专用</a></li>
-			</ul>
-
+		<div class="sidenav" id="sidenav">
+			<script>
+				<!--载入侧边栏模板-->
+				$("#sidenav").load("sidenav.html");
+			</script>
 		</div>
 
 		<div class="clearer"><span></span></div>
