@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf8"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<!--<meta http-equiv="refresh" content="1"><!--每隔content秒刷新-->
+<!-- icon -->
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="bookmark" href="/favicon.ico"/>
+<!-- 导入样式 -->
+<script src="./lib/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="public/css/default.css" media="screen"/>
+<title>cloudinnng的个人网站</title>
+</head>
+
+<body>
+
+
+<!--<script src="./lib/jquery.min.js"></script>-->
+<script src="./lib/marked.min.js"></script>
+<script>
+	$.get('./index.md', function(response, status, xhr){
+		$("#content").html(marked(response));
+	});
+</script>
+
+<script>
+	
+</script>
+
+<div class="top">
+				
+	<div class="header">
+
+		<div class="left">
+			cloudinnng.gitee.io
+		</div>
+		
+		<div class="right">
+
+			<h2>cloudinnng的个人网站</h2>
+			<p>这里是我的网站,欢迎访问。</p>
+
+		</div>
+
+	</div>	
+
+</div>
+
+<div class="container">	
+
+	<div class="navigation">
+		<a href="index.html">首页</a>
+		<a href="index-introduction.html">个人介绍</a>
+						
+		<div class="clearer"><span></span></div>
+	</div>
+
+	<div class="main">		
+		
+		<div class="content" id="content">
+<!---------------------------------------------------------------------------------------->
+<div id="page1"></div>
+<div id="page2"></div>
+<script>
+	  $("#page1").load("importtest.html");
+	  
+</script>
+
+<!---------------------------------------------------------------------------------------->
+		</div>
+
+		<div class="sidenav">
+
+			<h2>便捷网盘</h2>
+			<ul>
+				<li><a href="./files/wb.rar">网吧专用</a></li>
+			</ul>
+
+		</div>
+
+		<div class="clearer"><span></span></div>
+
+	</div>
+
+	<div class="footer">
+	
+		<center><a href="http://www.miitbeian.gov.cn/">京ICP备18062297</a></center>
+
+		<div class="clearer"><span></span></div>
+
+	</div>
+
+</div>
+
+</body>
+
+</html>

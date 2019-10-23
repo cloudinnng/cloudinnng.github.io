@@ -26,7 +26,7 @@
 	
 	setTimeout(function(){
 		<!--载入正文-->
-		$.get('./index.md', function(response, status, xhr){
+		$.get('./introduction.md', function(response, status, xhr){
 			$("#content").html(marked(response));
 		});
 	},500);
