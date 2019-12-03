@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 3879457114
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: mainsceneab
+      Dependencies: {}
+    Info_1:
+      Name: othersceneab
+      Dependencies: {}
