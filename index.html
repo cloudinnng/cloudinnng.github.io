@@ -1,36 +1,77 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
+	<meta charset="UTF-8">
+	<title>TTW的码云主页</title>
+	<style>
+		body {
+			background-color: #1f1f1f;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			padding: 0;
+			margin: 0;
+		}
+	h1 {
+		font-size: 48px;
+		margin-top: 100px;
+		margin-bottom: 50px;
+		text-align: center;
+		text-shadow: 2px 2px 0 #00FFFF;
+	}
 
-<meta http-equiv="content-type" content="text/html; charset=utf8"/>
-<meta name="description" content="description"/>
-<meta name="keywords" content="keywords"/> 
-<meta name="author" content="author"/> 
-<!-- icon -->
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="bookmark" href="/favicon.ico"/>
-<!-- 导入样式 -->
-<script src="./lib/jquery.min.js"></script>
-<script src="./lib/marked.min.js"></script>
-<link rel="stylesheet" type="text/css" href="public/css/default.css" media="screen"/>
-<title>cloudinnng的个人网站</title>
+	h2 {
+		font-size: 36px;
+		margin-top: 100px;
+		margin-bottom: 50px;
+		text-align: center;
+		text-shadow: 2px 2px 0 #00FFFF;
+	}
+
+	p {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	#logo {
+		display: block;
+		margin: 0 auto;
+		width: 200px;
+		height: 200px;
+		background-color: #00FFFF;
+		border-radius: 50%;
+		box-shadow: 5px 5px 0 #fff;
+	}
+
+	.contact-info {
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	.contact-info a {
+		color: #00FFFF;
+		text-decoration: none;
+		font-size: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.contact-info a:hover {
+		color: #fff;
+		text-shadow: 1px 1px 0 #00FFFF;
+	}
+</style>
 </head>
-
-<body id="body">
+<body>
+	<h1>TTW</h1>
+	<div id="logo"></div>
+	<h2>Unity程序员，独立游戏开发者</h2>
+	<p>欢迎来到我的码云主页！</p>
+	<div class="contact-info">
+		<p>如有技术支持需求，请发送邮件至:</p>
+		<a href="mailto:2458560306@qq.com">2458560306@qq.com</a>
+	</div>
 </body>
-
-<script>
-	<!--载入模板-->
-	$("#body").load("template-body.html");
-	
-	setTimeout(function(){
-		<!--载入正文-->
-		$.get('./index.md', function(response, status, xhr){
-			$("#content").html(marked(response));
-		});
-	},500);
-	
-</script>
-
-</html>
+</html> 
